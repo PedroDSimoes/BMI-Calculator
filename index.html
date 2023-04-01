@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <div id="metric-container">
+    <label for="weight">Enter your Weight:</label>
+    <input type="number" id="weight" name="weight" placeholder="kg">
+    <label for="height">Enter your Height:</label>
+    <input type="number" id="height" name="height" placeholder="cm">
+    <button onclick="calculateBMIMetric()">Calculate BMI (Metric)</button>
+    </div>
+    <div id="imperial-container">
+    <label for="weightimperial">Enter your Weight:</label>
+    <input type="number" id="weightpounds" name="weight" placeholder="pounds">
+    <label for="heightimperial">Enter your Height:</label>
+    <input type="number" id="height-feet" name="heightimperialft" placeholder="feet">
+    <input type="number" id="height-inches" name="heightimperialin" placeholder="inches">
+    <button onclick="calculateBMIImperial()">Calculate BMI (Imperial)</button>
+    </div>
+    <p id="result"></p>
+    <p id="message"></p>
+    <canvas id="chart" width="400" height="300"></canvas>
+    <footer>
+        <p>&copy; 2023 Pedro Simoes</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
